@@ -26,5 +26,9 @@ extension SKSpriteNode {
         let action = SKAction.animate(with: textures, timePerFrame: 0.03333)
         let foreverAction = SKAction.repeatForever(action)
         self.run(foreverAction, withKey: key)
+        
+        if Settings.shared.ghostCrab == true {
+            self.alpha = 0.2
+        }
     }
 }

@@ -17,4 +17,5 @@ class Settings {
     var shouldZoom = false
     var crab = "HappyCrab"
     var position = CGPoint(x: 200, y: 500)
+    var ghostCrab = false
 }

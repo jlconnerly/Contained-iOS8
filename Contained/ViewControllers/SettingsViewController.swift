@@ -32,4 +32,9 @@ class SettingsViewController: UIViewController {
         Settings.shared.crab = "WaitingCrab"
     }
     
+    @IBAction func ghostCrabTapped(_ sender: UISwitch) {
+        
+            Settings.shared.ghostCrab = sender.isOn
+    
+    }
 }

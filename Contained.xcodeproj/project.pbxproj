@@ -21,6 +21,8 @@
 		327ECA1122E64E2600AE8682 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327ECA0F22E64E2600AE8682 /* Game.storyboard */; };
 		327ECA1322E64E8000AE8682 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327ECA1222E64E8000AE8682 /* Info.storyboard */; };
 		327ECA1522E6578400AE8682 /* CustomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327ECA1422E6578400AE8682 /* CustomScene.swift */; };
+		327ECA1B22E66D4900AE8682 /* crabsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 327ECA1A22E66D4900AE8682 /* crabsound.mp3 */; };
+		327ECA1D22E66E0E00AE8682 /* shortcrabsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 327ECA1C22E66E0E00AE8682 /* shortcrabsound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		327ECA1022E64E2600AE8682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Contained/View/Base.lproj/Game.storyboard; sourceTree = "<group>"; };
 		327ECA1222E64E8000AE8682 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		327ECA1422E6578400AE8682 /* CustomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScene.swift; sourceTree = "<group>"; };
+		327ECA1A22E66D4900AE8682 /* crabsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crabsound.mp3; sourceTree = "<group>"; };
+		327ECA1C22E66E0E00AE8682 /* shortcrabsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shortcrabsound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				327EC9F122E6325500AE8682 /* Info.plist */,
 				327EC9F922E642BC00AE8682 /* SKSpriteNode+Utility.swift */,
 				327ECA1422E6578400AE8682 /* CustomScene.swift */,
+				327ECA1A22E66D4900AE8682 /* crabsound.mp3 */,
+				327ECA1C22E66E0E00AE8682 /* shortcrabsound.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -182,12 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				327ECA1122E64E2600AE8682 /* Game.storyboard in Resources */,
+				327ECA1B22E66D4900AE8682 /* crabsound.mp3 in Resources */,
 				327ECA1322E64E8000AE8682 /* Info.storyboard in Resources */,
 				327EC9F022E6325500AE8682 /* LaunchScreen.storyboard in Resources */,
 				327EC9F822E642AD00AE8682 /* Crab.xcassets in Resources */,
 				327EC9ED22E6325500AE8682 /* Assets.xcassets in Resources */,
 				327ECA0E22E64CD200AE8682 /* Settings.storyboard in Resources */,
 				327EC9EB22E6325300AE8682 /* Main.storyboard in Resources */,
+				327ECA1D22E66E0E00AE8682 /* shortcrabsound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

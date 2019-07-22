@@ -37,18 +37,22 @@ class CustomScene: SKScene {
         let rollAction = SKAction.rotate(byAngle: CGFloat.pi * 2, duration: actionDuration)
         let zoomAction = SKAction.scale(by: 1.3, duration: 0.3)
         let unzoomAction = SKAction.scale(to: 1.0, duration: 0.1)
+        let soundAction = SKAction.playSoundFileNamed("shortcrabsound", waitForCompletion: false)
+        
         
         
         
         switch Settings.shared.shouldZoom {
         case false:
+            crab.run(soundAction)
             crab.run(moveAction)
         case true:
-            let sequenceAction = SKAction.sequence([zoomAction, moveAction, unzoomAction])
+            let sequenceAction = SKAction.sequence([soundAction, zoomAction, moveAction, unzoomAction])
             crab.run(sequenceAction)
         }
         
         if Settings.shared.shouldRoll {
+            crab.run(soundAction)
             crab.run(rollAction)
         }
     }
