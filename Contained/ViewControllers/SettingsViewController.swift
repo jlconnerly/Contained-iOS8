@@ -24,4 +24,12 @@ class SettingsViewController: UIViewController {
         Settings.shared.shouldZoom = sender.isOn
     }
     
+    @IBAction func happyCrabTapped(_ sender: UIButton) {
+        Settings.shared.crab = "HappyCrab"
+    }
+    
+    @IBAction func waitingCrabTapped(_ sender: UIButton) {
+        Settings.shared.crab = "WaitingCrab"
+    }
+    
 }

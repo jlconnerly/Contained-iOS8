@@ -57,10 +57,76 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Crab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-sC-GHi">
+                                <rect key="frame" x="100" y="44" width="215" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZsK-oY-x9M">
+                                <rect key="frame" x="20" y="143" width="358" height="177.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="b7L-Kd-TXN">
+                                        <rect key="frame" x="16" y="0.0" width="326.5" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Crab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-dR-bMj">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting Crab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vG-1O-rcX">
+                                                <rect key="frame" x="209" y="0.0" width="117.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="d85-RA-PoR">
+                                        <rect key="frame" x="0.0" y="48.5" width="358" height="129"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-qr-c3k">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4vL-qr-c3k" secondAttribute="height" multiplier="1:1" id="E7a-mJ-XI2"/>
+                                                    <constraint firstAttribute="width" constant="129" id="v5X-UQ-3ko"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <state key="normal" image="happycrab000">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="happyCrabTapped:" destination="G9H-14-g2Z" eventType="touchUpInside" id="2Q9-jc-Qhg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIk-78-vZ5">
+                                                <rect key="frame" x="229" y="0.0" width="129" height="129"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="129" id="lZk-lR-aax"/>
+                                                    <constraint firstAttribute="width" secondItem="wIk-78-vZ5" secondAttribute="height" multiplier="1:1" id="ug8-7a-fpJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="waitingcrab000"/>
+                                                <connections>
+                                                    <action selector="waitingCrabTapped:" destination="G9H-14-g2Z" eventType="touchUpInside" id="d81-d0-1p2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZsK-oY-x9M" firstAttribute="top" secondItem="Oe4-sC-GHi" secondAttribute="bottom" constant="63" id="13P-2y-fGI"/>
                             <constraint firstItem="Y1G-yw-yRS" firstAttribute="centerY" secondItem="pBu-gl-xNe" secondAttribute="centerY" id="7gn-LB-ZnO"/>
+                            <constraint firstItem="bsB-uQ-Rqs" firstAttribute="trailing" secondItem="Oe4-sC-GHi" secondAttribute="trailing" constant="99" id="Fwh-DL-vYe"/>
+                            <constraint firstItem="Oe4-sC-GHi" firstAttribute="leading" secondItem="bsB-uQ-Rqs" secondAttribute="leading" constant="100" id="MDu-QF-BAs"/>
+                            <constraint firstItem="bsB-uQ-Rqs" firstAttribute="trailing" secondItem="ZsK-oY-x9M" secondAttribute="trailing" constant="36" id="Ywa-7F-WxI"/>
+                            <constraint firstItem="Oe4-sC-GHi" firstAttribute="top" secondItem="bsB-uQ-Rqs" secondAttribute="top" id="c63-1f-pG7"/>
+                            <constraint firstItem="ZsK-oY-x9M" firstAttribute="leading" secondItem="bsB-uQ-Rqs" secondAttribute="leading" constant="20" id="phY-Le-ebZ"/>
                             <constraint firstItem="Y1G-yw-yRS" firstAttribute="centerX" secondItem="pBu-gl-xNe" secondAttribute="centerX" id="waF-Po-Hty"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bsB-uQ-Rqs"/>
@@ -70,10 +136,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tC-rf-TbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-61" y="179"/>
+            <point key="canvasLocation" x="-62.318840579710148" y="178.79464285714286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="happycrab000" width="131" height="129"/>
         <image name="settings" width="30" height="30"/>
+        <image name="waitingcrab000" width="131" height="129"/>
     </resources>
 </document>
