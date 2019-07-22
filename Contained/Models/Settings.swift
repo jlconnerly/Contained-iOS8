@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Settings {
     static let shared = Settings()
@@ -15,4 +16,5 @@ class Settings {
     var shouldRoll = false
     var shouldZoom = false
     var crab = "HappyCrab"
+    var position = CGPoint(x: 200, y: 500)
 }
