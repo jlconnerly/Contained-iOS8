@@ -17,11 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="QrF-Nx-KqP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYa-W5-ZP3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </skView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iYa-W5-ZP3" firstAttribute="top" secondItem="CBX-UV-7gI" secondAttribute="top" id="64q-Je-GXW"/>
+                            <constraint firstItem="CBX-UV-7gI" firstAttribute="trailing" secondItem="iYa-W5-ZP3" secondAttribute="trailing" id="g08-yd-EAi"/>
+                            <constraint firstItem="iYa-W5-ZP3" firstAttribute="leading" secondItem="CBX-UV-7gI" secondAttribute="leading" id="wSf-ai-TuR"/>
+                            <constraint firstItem="CBX-UV-7gI" firstAttribute="bottom" secondItem="iYa-W5-ZP3" secondAttribute="bottom" id="xLD-GO-ILf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CBX-UV-7gI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="game_controller" id="0wS-ft-noF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="skView" destination="iYa-W5-ZP3" id="mwh-gm-eeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVe-VY-7zn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
