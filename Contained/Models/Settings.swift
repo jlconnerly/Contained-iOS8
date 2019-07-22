@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Settings {
+class Settings {
     static let shared = Settings()
     private init() {}
     

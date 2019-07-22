@@ -19,6 +19,7 @@ class InfoViewController: UIViewController {
 
     @IBAction func done(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
+        
     }
     /*
     // MARK: - Navigation
