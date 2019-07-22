@@ -13,6 +13,7 @@
 		327EC9F022E6325500AE8682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327EC9EE22E6325500AE8682 /* LaunchScreen.storyboard */; };
 		327EC9F822E642AD00AE8682 /* Crab.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327EC9F722E642AC00AE8682 /* Crab.xcassets */; };
 		327EC9FA22E642BC00AE8682 /* SKSpriteNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EC9F922E642BC00AE8682 /* SKSpriteNode+Utility.swift */; };
+		327EC9FE22E643BC00AE8682 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EC9FD22E643BC00AE8682 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		327EC9F122E6325500AE8682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327EC9F722E642AC00AE8682 /* Crab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Crab.xcassets; sourceTree = "<group>"; };
 		327EC9F922E642BC00AE8682 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Utility.swift"; sourceTree = "<group>"; };
+		327EC9FD22E643BC00AE8682 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 		327EC9E422E6325300AE8682 /* Contained */ = {
 			isa = PBXGroup;
 			children = (
-				327EC9E922E6325300AE8682 /* Main.storyboard */,
-				327EC9EE22E6325500AE8682 /* LaunchScreen.storyboard */,
+				327EC9FF22E643C100AE8682 /* Models */,
+				327EC9FC22E6439E00AE8682 /* View */,
+				327ECA0422E6454600AE8682 /* ViewControllers */,
 				327EC9FB22E642F600AE8682 /* Resources */,
 			);
 			path = Contained;
@@ -73,6 +76,30 @@
 				327EC9F922E642BC00AE8682 /* SKSpriteNode+Utility.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		327EC9FC22E6439E00AE8682 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327EC9EE22E6325500AE8682 /* LaunchScreen.storyboard */,
+				327EC9E922E6325300AE8682 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327EC9FF22E643C100AE8682 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				327EC9FD22E643BC00AE8682 /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		327ECA0422E6454600AE8682 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327EC9FE22E643BC00AE8682 /* Settings.swift in Sources */,
 				327EC9E622E6325300AE8682 /* AppDelegate.swift in Sources */,
 				327EC9FA22E642BC00AE8682 /* SKSpriteNode+Utility.swift in Sources */,
 			);
@@ -296,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM84C6XKT7;
-				INFOPLIST_FILE = Contained/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contained/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM84C6XKT7;
-				INFOPLIST_FILE = Contained/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contained/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
